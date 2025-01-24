@@ -1,0 +1,61 @@
+unit Register_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+  TfrmRegister = class(TForm)
+    pnlRegisterInfo: TPanel;
+    edtFirstName: TEdit;
+    edtLastName: TEdit;
+    edtEmail: TEdit;
+    edtPassword: TEdit;
+    edtPasswordConfirmation: TEdit;
+    pnlRegister: TPanel;
+    pnlLogin: TPanel;
+    pnlClose: TPanel;
+    lblFirstName: TLabel;
+    lblLastName: TLabel;
+    lblEmail: TLabel;
+    lblPassword: TLabel;
+    lblPasswordConfirm: TLabel;
+    cmbUserType: TComboBox;
+    lblUserType: TLabel;
+    Image1: TImage;
+    Image2: TImage;
+    lblCreateAccount: TLabel;
+    lblInstruction: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure pnlCloseClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRegister: TfrmRegister;
+
+implementation
+uses
+ChromeSkyEstates_u;
+
+{$R *.dfm}
+
+procedure TfrmRegister.FormCreate(Sender: TObject);
+begin
+cmbUserType.Items.Add('Administrator');
+cmbUserType.Items.Add('Agent');
+end;
+
+procedure TfrmRegister.pnlCloseClick(Sender: TObject);
+begin
+frmRegister.Close;
+frmLoginScreen.Show;
+end;
+
+end.

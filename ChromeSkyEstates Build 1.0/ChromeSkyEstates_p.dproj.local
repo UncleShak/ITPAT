@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/09/13 16:08:08.000.318,=C:\Users\shaki\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/07/08 15:34:49.000.618,=C:\Users\shaki\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/07/11 20:17:11.000.678,=C:\Users\shaki\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/07/11 20:17:47.000.106,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ChromeSkyEstates_u.dfm=C:\Users\shaki\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/07/11 20:17:47.000.106,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ChromeSkyEstates_u.pas=C:\Users\shaki\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/07/11 20:17:56.000.317,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ChromeSkyEstates_p.dproj=C:\Users\shaki\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/07/11 20:18:02.000.512,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/11 20:18:15.000.690,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/11 20:18:39.000.141,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\dmChromeSkyEstates_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/11 20:18:39.000.141,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\dmChromeSkyEstates_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.dfm</Transaction>
+    <Transaction>2024/07/12 22:24:51.000.408,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit2.pas</Transaction>
+    <Transaction>2024/07/12 22:25:06.000.528,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentDashboard_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit2.pas</Transaction>
+    <Transaction>2024/07/12 22:25:06.000.528,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentDashboard_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit2.dfm</Transaction>
+    <Transaction>2024/07/12 22:31:31.000.447,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit2.pas</Transaction>
+    <Transaction>2024/07/12 22:31:48.000.292,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit2.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AdminDashboard_u.dfm</Transaction>
+    <Transaction>2024/07/12 22:31:48.000.292,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit2.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AdminDashboard_u.pas</Transaction>
+    <Transaction>2024/07/14 21:10:38.000.408,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/14 21:11:08.000.535,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\clsUserInfo_u.pas</Transaction>
+    <Transaction>2024/07/14 21:44:55.000.442,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\clsAgentInfo_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\clsUserInfo_u.pas</Transaction>
+    <Transaction>2024/07/15 21:36:57.000.819,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/15 21:37:11.000.364,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\clsAdmin_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/15 22:43:18.000.195,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\clsAdmin_u.pas=</Transaction>
+    <Transaction>2024/07/15 22:46:08.000.447,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/15 22:46:32.000.501,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentDashboard_u.dfm</Transaction>
+    <Transaction>2024/07/15 22:46:32.000.501,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentDashboard_u.pas</Transaction>
+    <Transaction>2024/07/15 23:07:27.000.806,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/15 23:08:20.000.675,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ClientsnProperties.pas</Transaction>
+    <Transaction>2024/07/15 23:08:20.000.675,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ClientsnProperties.dfm</Transaction>
+    <Transaction>2024/07/15 23:08:53.000.346,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ClientsnProperties.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ClientsnProperties_u.pas</Transaction>
+    <Transaction>2024/07/15 23:08:53.000.346,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ClientsnProperties.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ClientsnProperties_u.dfm</Transaction>
+    <Transaction>2024/07/17 21:58:10.000.098,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ClientsnProperties_u.pas=</Transaction>
+    <Transaction>2024/07/17 21:59:31.000.993,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/17 21:59:57.000.715,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Clients_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/17 21:59:57.000.715,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Clients_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.dfm</Transaction>
+    <Transaction>2024/07/18 21:35:43.000.655,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/18 21:35:59.000.363,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Register_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/18 21:35:59.000.363,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Register_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.dfm</Transaction>
+    <Transaction>2024/07/19 15:12:10.000.707,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/19 15:12:49.000.003,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentProperty_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.dfm</Transaction>
+    <Transaction>2024/07/19 15:12:49.000.003,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentProperty_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/19 15:13:17.000.914,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentClients_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Clients_u.pas</Transaction>
+    <Transaction>2024/07/19 15:13:17.000.914,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentClients_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Clients_u.dfm</Transaction>
+    <Transaction>2024/07/26 15:45:03.000.659,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/07/26 15:45:42.000.062,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\frmAgentnClient_u.pas</Transaction>
+    <Transaction>2024/07/26 15:45:42.000.062,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\frmAgentnClient_u.dfm</Transaction>
+    <Transaction>2024/07/26 15:58:39.000.246,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentnClient_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\frmAgentnClient_u.pas</Transaction>
+    <Transaction>2024/07/26 15:58:39.000.246,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentnClient_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\frmAgentnClient_u.dfm</Transaction>
+    <Transaction>2024/07/28 09:16:35.000.518,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AdminManagement_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentnClient_u.pas</Transaction>
+    <Transaction>2024/07/28 09:16:35.000.518,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AdminManagement_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\AgentnClient_u.dfm</Transaction>
+    <Transaction>2024/08/01 21:01:00.000.632,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/08/01 21:01:30.000.839,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\frmForgotPassword_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.dfm</Transaction>
+    <Transaction>2024/08/01 21:01:30.000.839,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\frmForgotPassword_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+    <Transaction>2024/08/01 21:21:03.000.418,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ForgotPassword_u.pas=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\frmForgotPassword_u.pas</Transaction>
+    <Transaction>2024/08/01 21:21:03.000.418,C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\ForgotPassword_u.dfm=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\frmForgotPassword_u.dfm</Transaction>
+    <Transaction>2024/08/04 16:03:11.000.197,=C:\Users\shaki\Documents\IT\Shakir Alexander IT PAT 2024\Phase 2\ChromeSkyEstates Build 1.0\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="AdminDashboard_u.pas"/>
+    <File Path="AdminDashboard_u.dfm"/>
+    <File Path="AdminManagement_u.pas"/>
+    <File Path="AdminManagement_u.dfm"/>
+    <File Path="AgentClients_u.pas"/>
+    <File Path="AgentClients_u.dfm"/>
+    <File Path="AgentDashboard_u.pas"/>
+    <File Path="AgentDashboard_u.dfm"/>
+    <File Path="AgentProperty_u.pas"/>
+    <File Path="AgentProperty_u.dfm"/>
+    <File Path="ChromeSkyEstates_u.pas"/>
+    <File Path="ChromeSkyEstates_u.dfm"/>
+    <File Path="clsAgentInfo_u.pas"/>
+    <File Path="dmChromeSkyEstates_u.pas"/>
+    <File Path="dmChromeSkyEstates_u.dfm"/>
+    <File Path="ForgotPassword_u.pas"/>
+    <File Path="ForgotPassword_u.dfm"/>
+    <File Path="Register_u.pas"/>
+    <File Path="Register_u.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

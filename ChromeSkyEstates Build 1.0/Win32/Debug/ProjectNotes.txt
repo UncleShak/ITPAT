@@ -1,0 +1,44 @@
+Login:
+=====================================================================
+-Enter User and Password
+-If you don't have one, click the sign up button to create an account.
+
+Agent Dashboard
+=====================================================================
+-To access property information, click on the property button.
+-To access client information, click on the employee button.
+-To close the program, click the close button.
+-To log out of the program, click on the logout button.
+
+Agent Property
+=====================================================================
+-The installation calculator allows you to calculate the properties EMI.
+	-Simply add the Property Listing, Duration and Interest Rate and click
+	 Calculate.
+-To navigate through your Clients, use the controls provided.
+-To return to the agent dashboard, click the back button.
+-To close the program, click the close button.
+
+Agent Clients
+=====================================================================
+-To update a payment, enter the amount paid and click the Add Payment button.
+-To search for a client, enter the Name or Client ID of the client and click the 
+ search button.
+-To add a client, click the add client button and fill the information required.
+-To remove a client, click the delete client button to remove the current client.
+
+Admin Dashboard
+=====================================================================
+-To access Agent and Property Management, click the View Agents and Properties 
+ button to access it.
+-To view Agent Logs, click the Open Log Files button to open the text file containing 
+ the information
+
+Agent and Property Management
+=======================================================================
+-To search for a particular Agent, enter their ID in the search bar and click
+ the search icon.
+-Filtering for the search is available, click the amount of rooms and the client id
+ to narrow your search.
+-To add, edit or remove an agent, click the corresponding button, enter the required
+ information and allow the program to work. 

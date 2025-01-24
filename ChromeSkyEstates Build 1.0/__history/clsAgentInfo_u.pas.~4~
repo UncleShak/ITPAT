@@ -1,0 +1,45 @@
+unit clsAgentInfo_u;
+
+interface
+
+type
+  TAgentInfo = class(TObject)
+  private
+    fAgent_Code: string;
+    fFirst_Name: string;
+    fLast_Name: string;
+    fAge: integer;
+    fRace: string;
+    fSalesRecord: integer;
+
+  public
+    constructor create(  sAgent_Code , sFirst_Name,
+      sLast_Name ,sRace: string; iSales_Record,iAge:integer  );
+
+    function getFullName: string;
+  end;
+
+implementation
+
+{ TAgentInfo }
+
+
+
+constructor TAgentInfo.create(sAgent_Code, sFirst_Name, sLast_Name,
+  sRace: string; iSales_Record, iAge: integer);
+begin
+fAgent_Code:= sAgent_Code;
+fFirst_Name:= sFirst_Name;
+fLast_Name:= sLast_Name;
+fRace:= sRace;
+
+fSalesRecord:= iSales_Record;
+fAge:= iAge;
+end;
+
+function TAgentInfo.getFullName: string;
+begin
+  result := fFirst_Name + ' ' + fLast_Name;
+end;
+
+end.

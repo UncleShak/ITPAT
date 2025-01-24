@@ -1,0 +1,23 @@
+program ChromeSkyEstates_p;
+
+uses
+  Vcl.Forms,
+  ChromeSkyEstates_u in 'ChromeSkyEstates_u.pas' {frmLoginScreen},
+  dmChromeSkyEstates_u in 'dmChromeSkyEstates_u.pas' {dmCSE: TDataModule},
+  AdminDashboard_u in 'AdminDashboard_u.pas' {frmAdminDashboard},
+  clsAgentInfo_u in 'clsAgentInfo_u.pas',
+  AgentDashboard_u in 'AgentDashboard_u.pas' {frmAgentDashboard},
+  Clients_u in 'Clients_u.pas' {frmClients_u};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmLoginScreen, frmLoginScreen);
+  Application.CreateForm(TdmCSE, dmCSE);
+  Application.CreateForm(TfrmAdminDashboard, frmAdminDashboard);
+  Application.CreateForm(TfrmAgentDashboard, frmAgentDashboard);
+  Application.CreateForm(TfrmClients_u, frmClients_u);
+  Application.Run;
+end.

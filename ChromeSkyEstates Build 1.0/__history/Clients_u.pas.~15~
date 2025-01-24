@@ -1,0 +1,167 @@
+unit Clients_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, dmChromeSkyEstates_u, Data.DB,
+  Vcl.StdCtrls, Vcl.DBCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls, Vcl.Buttons,
+  Vcl.ComCtrls;
+
+type
+  TfrmClients_u = class(TForm)
+    dbgClientsQRY: TDBGrid;
+    pnlClose: TPanel;
+    pnlBack: TPanel;
+    pnlClientInfo: TPanel;
+    Image1: TImage;
+    lblClientID: TLabel;
+    lblFullName: TLabel;
+    lblAge: TLabel;
+    lblRace: TLabel;
+    lblStatus: TLabel;
+    lblAmountDue: TLabel;
+    pnlClientInfoEdit: TPanel;
+    PageControl1: TPageControl;
+    tbshtPayement: TTabSheet;
+    DBNavigator1: TDBNavigator;
+    tbshtAddClient: TTabSheet;
+    tbshtRemoveClient: TTabSheet;
+    lblPayment: TLabel;
+    lblCurrentAmnt: TLabel;
+    dbtCurrentAmount: TDBText;
+    lblNewAmount: TLabel;
+    edtAddAmount: TEdit;
+    btnAddAmount: TButton;
+    lblPropertyCode: TLabel;
+    lblStatusDyn: TLabel;
+    lblAmountDueDyn: TLabel;
+    lblPropertyCodeDyn: TLabel;
+    lblClientIdDyn: TLabel;
+    lblNameDyn: TLabel;
+    lblAgeDyn: TLabel;
+    lblRaceDyn: TLabel;
+    bitbtnSearch: TBitBtn;
+    edtSearch: TEdit;
+    lblSearch: TLabel;
+    procedure pnlCloseClick(Sender: TObject);
+    procedure pnlBackClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure bitbtnSearchClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmClients_u: TfrmClients_u;
+
+implementation
+
+uses
+  ChromeSkyEstates_u, AgentDashboard_u;
+
+{$R *.dfm}
+
+procedure TfrmClients_u.bitbtnSearchClick(Sender: TObject);
+var
+  sSearch: String;
+  bFound: boolean;
+
+  rAmountPaid, rAmountDue, rListPrice: real;
+begin
+  bFound := False;
+  sSearch := edtSearch.Text;
+  with dmCSE do
+  begin
+    qryClients.First;
+    while not qryClients.Eof do
+    begin
+      if qryClients['Client_ID'] = sSearch then
+      begin
+        lblNameDyn.Caption := qryClients['First_Name'] + ' ' + qryClients
+          ['Last_Name'];
+        lblClientIdDyn.Caption := qryClients['Client_ID'];
+        lblAgeDyn.Caption := IntToStr(qryClients['Age']);
+        lblRaceDyn.Caption := qryClients['Race'];
+        tblProperties.First;
+        rAmountPaid := qryClients['AmountPaid'];
+        while not tblProperties.Eof and (bFound = False) do
+        begin
+          if tblProperties['Client_ID'] = qryClients['Client_ID'] then
+          begin
+            bFound := True;
+            if bFound = True then
+            begin
+              rListPrice := tblProperties['Listing_Price'];
+              lblPropertyCodeDyn.Caption := tblProperties['Property_ID'];
+
+            end;
+
+          end
+          else
+            tblProperties.Next;
+        end;
+      end
+      else if qryClients['First_Name'] = sSearch then
+      begin
+        lblNameDyn.Caption := qryClients['First_Name'] + ' ' + qryClients
+          ['Last_Name'];
+        lblClientIdDyn.Caption := qryClients['Client_ID'];
+        lblAgeDyn.Caption := IntToStr(qryClients['Age']);
+        lblRaceDyn.Caption := qryClients['Race'];
+      end;
+      qryClients.Next;
+    end;
+  end;
+
+  { rAmountDue := rListPrice - rAmountPaid;
+    lblAmountDueDyn.Caption := FloatToStrf(rAmountDue, ffCurrency, 8, 2); }
+
+end;
+
+procedure TfrmClients_u.FormActivate(Sender: TObject);
+var
+  sAgent_ID: string;
+begin
+
+  sAgent_ID := frmLoginScreen.sAgent_ID;
+  with dmCSE do
+  begin
+    qryClients.Close;
+    qryClients.SQL.Clear;
+    qryClients.SQL.Add('Select * FROM tblClients WHERE Assigned_Agent= "' +
+      sAgent_ID + '"');
+    qryClients.Open;
+  end;
+  TNumericField(dbgClientsQRY.DataSource.Dataset.FieldbyName('AmountPaid'))
+    .DisplayFormat := 'R,##0.00';
+  // Code provided by experts-exchange.com to format Amount field.
+
+  dbgClientsQRY.Columns[0].Width := 70;
+  dbgClientsQRY.Columns[1].Width := 80;
+  dbgClientsQRY.Columns[2].Width := 80;
+  dbgClientsQRY.Columns[3].Width := 70;
+  dbgClientsQRY.Columns[4].Width := 80;
+  dbgClientsQRY.Columns[5].Width := 100;
+  dbgClientsQRY.Columns[6].Width := 100;
+  dbgClientsQRY.Columns[7].Width := 90;
+
+end;
+
+procedure TfrmClients_u.pnlBackClick(Sender: TObject);
+begin
+  frmClients_u.Close;
+  frmAgentDashboard.Show;
+end;
+
+procedure TfrmClients_u.pnlCloseClick(Sender: TObject);
+begin
+  frmClients_u.Close;
+  frmAgentDashboard.Close;
+  frmLoginScreen.Close;
+end;
+
+end.

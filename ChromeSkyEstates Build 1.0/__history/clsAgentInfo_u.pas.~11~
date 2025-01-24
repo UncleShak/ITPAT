@@ -1,0 +1,32 @@
+unit clsAgentInfo_u;
+
+interface
+
+type
+  TAgentInfo = class(TObject)
+  private
+    fFirst_Name: string;
+    fLast_Name: string;
+
+  public
+    constructor create(sFirst_Name, sLast_Name: string);
+
+    function getFullName: string;
+  end;
+
+implementation
+
+{ TAgentInfo }
+
+constructor TAgentInfo.create(sFirst_Name, sLast_Name: string);
+begin
+  fFirst_Name := sFirst_Name;
+  fLast_Name := sLast_Name;
+end;
+
+function TAgentInfo.getFullName: string;
+begin
+  result := fFirst_Name + ' ' + fLast_Name;
+end;
+
+end.

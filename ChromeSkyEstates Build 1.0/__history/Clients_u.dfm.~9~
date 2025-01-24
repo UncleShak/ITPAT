@@ -1,0 +1,349 @@
+object frmClients_u: TfrmClients_u
+  Left = 0
+  Top = 0
+  Caption = 'Clients'
+  ClientHeight = 794
+  ClientWidth = 1314
+  Color = clWhite
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Arial Rounded MT Bold'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 12
+  object dbgClientsQRY: TDBGrid
+    Left = 572
+    Top = 112
+    Width = 653
+    Height = 266
+    Color = clBlack
+    DataSource = dmCSE.dscClients
+    FixedColor = clGreen
+    GradientEndColor = clBlack
+    GradientStartColor = clHighlightText
+    TabOrder = 0
+    TitleFont.Charset = ANSI_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Arial Rounded MT Bold'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'Client_ID'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'First_Name'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Last_Name'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Age'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Gender'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Race'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Assigned_Agent'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'AmountPaid'
+        Visible = True
+      end>
+  end
+  object pnlSearch: TPanel
+    Left = 640
+    Top = 38
+    Width = 529
+    Height = 45
+    TabOrder = 1
+    object lblSearchClient: TLabel
+      Left = 32
+      Top = 16
+      Width = 78
+      Height = 12
+      Caption = 'Search Client:'
+    end
+    object btnSearch: TSpeedButton
+      Left = 488
+      Top = 8
+      Width = 25
+      Height = 25
+    end
+    object edtSearch: TEdit
+      Left = 116
+      Top = 14
+      Width = 353
+      Height = 20
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clSilver
+      Font.Height = -11
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = [fsItalic]
+      ParentFont = False
+      TabOrder = 0
+      Text = 'Enter Name/Client ID'
+    end
+  end
+  object pnlClose: TPanel
+    Left = 1176
+    Top = 755
+    Width = 130
+    Height = 31
+    Caption = 'Close'
+    TabOrder = 2
+    OnClick = pnlCloseClick
+  end
+  object pnlBack: TPanel
+    Left = 1016
+    Top = 755
+    Width = 137
+    Height = 31
+    Caption = 'Back'
+    TabOrder = 3
+    OnClick = pnlBackClick
+  end
+  object pnlClientInfo: TPanel
+    Left = 0
+    Top = 0
+    Width = 465
+    Height = 793
+    TabOrder = 4
+    object Image1: TImage
+      Left = 68
+      Top = 46
+      Width = 269
+      Height = 251
+    end
+    object DBText1: TDBText
+      Left = 280
+      Top = 366
+      Width = 65
+      Height = 17
+      DataField = 'Client_ID'
+      DataSource = dmCSE.dscClientQRY
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblFullName: TLabel
+      Left = 40
+      Top = 416
+      Width = 42
+      Height = 15
+      Caption = 'Name:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblAge: TLabel
+      Left = 40
+      Top = 463
+      Width = 29
+      Height = 15
+      Caption = 'Age:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblRace: TLabel
+      Left = 41
+      Top = 517
+      Width = 37
+      Height = 15
+      Caption = 'Race:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblStatus: TLabel
+      Left = 40
+      Top = 600
+      Width = 46
+      Height = 15
+      Caption = 'Status:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblAmountDue: TLabel
+      Left = 40
+      Top = 640
+      Width = 83
+      Height = 15
+      Caption = 'Amount Due:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+    object DBText3: TDBText
+      Left = 280
+      Top = 463
+      Width = 65
+      Height = 17
+      DataField = 'Age'
+      DataSource = dmCSE.dscClientQRY
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+    object DBText4: TDBText
+      Left = 280
+      Top = 517
+      Width = 153
+      Height = 17
+      DataField = 'Race'
+      DataSource = dmCSE.dscClientQRY
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 280
+      Top = 408
+      Width = 44
+      Height = 15
+      Caption = 'Label1'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblClientID: TLabel
+      Left = 40
+      Top = 366
+      Width = 57
+      Height = 15
+      Caption = 'ClientID:'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Arial Rounded MT Bold'
+      Font.Style = []
+      ParentFont = False
+    end
+  end
+  object pnlClientInfoEdit: TPanel
+    Left = 552
+    Top = 423
+    Width = 689
+    Height = 282
+    TabOrder = 5
+    object PageControl1: TPageControl
+      Left = 12
+      Top = 1
+      Width = 665
+      Height = 273
+      ActivePage = tbshtPayement
+      MultiLine = True
+      TabOrder = 0
+      TabPosition = tpLeft
+      object tbshtPayement: TTabSheet
+        Caption = 'Add Payment'
+        object lblPayment: TLabel
+          Left = 256
+          Top = 16
+          Width = 134
+          Height = 24
+          Caption = 'Add Payment'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -21
+          Font.Name = 'Arial Rounded MT Bold'
+          Font.Style = [fsItalic]
+          ParentFont = False
+        end
+        object lblCurrentAmnt: TLabel
+          Left = 96
+          Top = 72
+          Width = 96
+          Height = 14
+          Caption = 'Current Amount:'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Arial Rounded MT Bold'
+          Font.Style = []
+          ParentFont = False
+        end
+        object dbtCurrentAmount: TDBText
+          Left = 376
+          Top = 72
+          Width = 65
+          Height = 17
+          DataField = 'AmountPaid'
+          DataSource = dmCSE.dscClientQRY
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Arial Rounded MT Bold'
+          Font.Style = []
+          ParentFont = False
+        end
+      end
+      object tbshtAddClient: TTabSheet
+        Caption = 'New Client'
+        ImageIndex = 1
+      end
+      object tbshtRemoveClient: TTabSheet
+        Caption = 'Remove Client'
+        ImageIndex = 2
+      end
+    end
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 784
+    Top = 384
+    Width = 240
+    Height = 25
+    DataSource = dmCSE.dscClientQRY
+    TabOrder = 6
+  end
+end

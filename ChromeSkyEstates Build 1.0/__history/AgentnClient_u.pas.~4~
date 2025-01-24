@@ -1,0 +1,102 @@
+unit AgentnClient_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.ExtCtrls, dmChromeSkyEstates_u, Vcl.Buttons, Vcl.StdCtrls;
+
+type
+  TfrmAgentsnClients_u = class(TForm)
+    pnlAgents: TPanel;
+    pnlClients: TPanel;
+    dbgAgents: TDBGrid;
+    pnlClose: TPanel;
+    spdClose: TSpeedButton;
+    dbgProperties: TDBGrid;
+    pnlControls: TPanel;
+    pnlNavBar: TPanel;
+    lblSearch: TLabel;
+    edtSearch: TEdit;
+    pnlSearch: TPanel;
+    SpeedButton1: TSpeedButton;
+    pnlSortAlphabeticallyASC: TPanel;
+    pnlSortAlphabeticallyDESC: TPanel;
+    spdSortAlpheticallyASC: TSpeedButton;
+    spdSortAlphabeticallyDESC: TSpeedButton;
+    pnlControlFirst: TPanel;
+    pnlControlPrior: TPanel;
+    pnlControlNext: TPanel;
+    pnlControlLast: TPanel;
+    spdControlFirst: TSpeedButton;
+    spdControlPrior: TSpeedButton;
+    spdControlNext: TSpeedButton;
+    spdControlLast: TSpeedButton;
+    pnlControls2: TPanel;
+    pnlControlFirst2: TPanel;
+    spdControlFirst2: TSpeedButton;
+    pnlControlPrior2: TPanel;
+    spdControlPrior2: TSpeedButton;
+    pnlControlNext2: TPanel;
+    spdControlNext2: TSpeedButton;
+    pnlControlLast2: TPanel;
+    spdControlLast2: TSpeedButton;
+    pnlSearch1: TPanel;
+    pnlFilter: TPanel;
+    lblRoomAmount: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure spdCloseClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmAgentsnClients_u: TfrmAgentsnClients_u;
+
+implementation
+
+uses
+  ChromeSkyEstates_u;
+
+{$R *.dfm}
+
+procedure TfrmAgentsnClients_u.FormActivate(Sender: TObject);
+begin
+  with dmCSE do
+  begin
+  tblAgents.Sort:='Agent_ID ASC';
+  tblProperties.Sort:='Assigned_Agent ASC'
+  end;
+end;
+
+procedure TfrmAgentsnClients_u.FormCreate(Sender: TObject);
+begin
+  dbgProperties.Columns[0].Width := 70;
+  dbgProperties.Columns[1].Width := 115;
+  dbgProperties.Columns[2].Width := 85;
+  dbgProperties.Columns[3].Width := 79;
+  dbgProperties.Columns[4].Width := 100;
+  dbgProperties.Columns[5].Width := 75;
+
+  dbgAgents.Columns[0].Width := 70;
+  dbgAgents.Columns[1].Width := 80;
+  dbgAgents.Columns[2].Width := 80;
+  dbgAgents.Columns[3].Width := 70;
+  dbgAgents.Columns[4].Width := 80;
+  dbgAgents.Columns[5].Width := 100;
+  dbgAgents.Columns[6].Width := 90;
+end;
+
+procedure TfrmAgentsnClients_u.spdCloseClick(Sender: TObject);
+begin
+  frmLoginScreen.Close;
+  frmAgentsnClients_u.Close;
+
+end;
+
+end.

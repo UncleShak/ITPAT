@@ -1,0 +1,98 @@
+unit Clients_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, dmChromeSkyEstates_u, Data.DB,
+  Vcl.StdCtrls, Vcl.DBCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls, Vcl.Buttons,
+  Vcl.ComCtrls;
+
+type
+  TfrmClients_u = class(TForm)
+    dbgClientsQRY: TDBGrid;
+    lblSearchClient: TLabel;
+    pnlSearch: TPanel;
+    edtSearch: TEdit;
+    pnlClose: TPanel;
+    pnlBack: TPanel;
+    pnlClientInfo: TPanel;
+    Image1: TImage;
+    DBText1: TDBText;
+    lblClientID: TLabel;
+    lblFullName: TLabel;
+    lblAge: TLabel;
+    lblRace: TLabel;
+    lblStatus: TLabel;
+    lblAmountDue: TLabel;
+    DBText3: TDBText;
+    DBText4: TDBText;
+    btnSearch: TSpeedButton;
+    Label1: TLabel;
+    pnlClientInfoEdit: TPanel;
+    PageControl1: TPageControl;
+    tbshtPayement: TTabSheet;
+    DBNavigator1: TDBNavigator;
+    tbshtAddClient: TTabSheet;
+    tbshtRemoveClient: TTabSheet;
+    lblPayment: TLabel;
+    lblCurrentAmnt: TLabel;
+    DBText2: TDBText;
+    procedure pnlCloseClick(Sender: TObject);
+    procedure pnlBackClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmClients_u: TfrmClients_u;
+
+implementation
+
+uses
+  ChromeSkyEstates_u, AgentDashboard_u;
+
+{$R *.dfm}
+
+procedure TfrmClients_u.FormActivate(Sender: TObject);
+var
+  sAgent_ID: string;
+begin
+  sAgent_ID := frmLoginScreen.sAgent_ID;
+  with dmCSE do
+  begin
+    qryClients.Close;
+    qryClients.SQL.Clear;
+    qryClients.SQL.Add('Select * FROM tblClients WHERE Assigned_Agent= "' +
+      sAgent_ID + '"');
+    qryClients.Open;
+  end;
+
+dbgClientsQRY.Columns[0].Width:=70;
+dbgClientsQRY.Columns[1].Width:=80;
+dbgClientsQRY.Columns[2].Width:=80;
+dbgClientsQRY.Columns[3].Width:=70;
+dbgClientsQRY.Columns[4].Width:=80;
+dbgClientsQRY.Columns[5].Width:=100;
+dbgClientsQRY.Columns[6].Width:=90;
+dbgClientsQRY.Columns[7].Width:=90;
+end;
+
+procedure TfrmClients_u.pnlBackClick(Sender: TObject);
+begin
+  frmClients_u.Close;
+  frmAgentDashboard.Show;
+end;
+
+procedure TfrmClients_u.pnlCloseClick(Sender: TObject);
+begin
+  frmClients_u.Close;
+  frmAgentDashboard.Close;
+  frmLoginScreen.Close;
+end;
+
+end.
