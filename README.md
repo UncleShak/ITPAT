@@ -1,2 +1,3 @@
 # ITPAT
-This is my Grade 12 Information Technology PAT that I created.
+Delphi is required to run this code im pretty sure.
+A word document called User Requirment Analysis.docx explains the features of the program.
